@@ -10,19 +10,19 @@
     scanf("%d",&marks);
     switch(marks)
     {
-        case 100: case 99: case 98: case 97: case 96: case 95: case 94: case 93: case 92: case 91: case 90:
+        case 90 ... 100:
         printf("Grade A");
         break;
-        case 89: case 88: case 87: case 86: case 85: case 84: case 83: case 82: case 81: case 80:
+        case 80 ... 89:
         printf("Grade B");
         break;
-        case 79: case 78: case 77: case 76: case 75: case 74: case 73: case 72: case 71: case 70:
+        case 70 ... 79:
         printf("Grade C");
         break;
-        case 69: case 68: case 67: case 66: case 65: case 64: case 63: case 62: case 61: case 60:
+        case 60 ... 69:
         printf("Grade D");
         break;
-        case 59: case 58: case 57: case 56: case 55: case 54: case 53: case 52: case 51: case 50:
+        case 50 ... 59:
         printf("Grade E");
         break;
         case 49 ... 1: 
@@ -116,15 +116,15 @@
 
     switch(x)
     {
-        case'a': case'b': case'c': case'd': case'e': case'f': case'g': case'h': case'i': case'j': case'k': case'l': case'm': case'n': case'o': case'p': case'q': case'r': case's': case't': case'u': case'v': case'w': case'x': case'y': case'z':
+        case'a' ... 'z':
         printf("Lower case");
         break;
 
-        case'A': case'B': case'C': case'D': case'E': case'F': case'G': case'H': case'I': case'J': case'K': case'L': case'M': case'N': case'O': case'P': case'Q': case'R': case'S': case'T': case'U': case'V': case'W': case'X': case'U': case'Z':
+        case'A' ... 'Z':
         printf("Upper case");
         break;
 
-        case 0: case 1: case 2: case 3:  case 4:  case 5:  case 6:  case 7:  case 8:  case 9: 
+        case 0 ...9: 
         printf("Digit");
         break;
 

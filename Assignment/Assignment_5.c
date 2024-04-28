@@ -55,8 +55,7 @@
     scanf("%d",&x);
     printf("Enter a digit:");
     scanf("%d",&a);
-    x=x/10*10;
-    x=x+a;
+    x=x*10+d;
     printf("Digit is Appended in the number:%d",x);
     return 0;
  }*/

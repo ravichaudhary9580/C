@@ -35,6 +35,8 @@ int HCF(int a,int b)
 int check_prime(int n)
 {
     int i=2;
+    if(n<2)
+    return 0;
     while(i<n)
     {
         if(n%i==0)
@@ -48,31 +50,49 @@ int check_prime(int n)
 
 int next_prime(int n)
 {
-    int i=2;
-    while(i<n)
-    {
-        if(n%i==0)
-        n=n+1;
-        i++;
-    }
-    return 1;
-
+    while(!check_prime(++n));
+    return n;
 }
+
+
+//Program 5
+void first_N_Prime(int n)
+{
+    int count=0,x=2;
+    while(count<n)
+    {
+        if(check_prime(x))
+        {
+            printf("%d ",x);
+            count=count+1;
+        }
+        x++;
+    }
+}
+
+
+
+
 
 int main()
 {
     int n;
-    printf("Enter a number:");
+    printf("Enter a number to print N term of Fibonacci series:");
+    // printf("Enter a number to print first n Prime:");
     scanf("%d",&n);
     // int a,b;
     // printf("Enter two number:");
     // scanf("%d %d",&a,&b);
-    // printf("LCM is %d",LCM(a,b));
+    // // printf("LCM is %d",LCM(a,b));
     // printf("HCF is %d",HCF(a,b));
-    if(check_prime(n))
-    printf("Prime");
-    else 
-    printf("Not Prime");
-    
+    // if(check_prime(n))
+    // printf("Prime");
+    // else 
+    // printf("Not Prime");
+    // printf("Next Prime %d",next_prime(n));
+    // first_N_Prime(n);
+    // all_Prime_bw_2(a,b);
+    first_N_fibo(n);
+
     return 0;
 }

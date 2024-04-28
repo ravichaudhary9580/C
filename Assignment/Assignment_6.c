@@ -12,18 +12,16 @@
 }*/
 
 //Program 2
-/*
-int main()
-{
-    int a,b,c;
-    printf("Enter a three digit Number:");
-    scanf("%d",&a);
-    b=a/10;   
-    c=a%10;
-    a=c*100+b;
-    printf("Rotated no: %d",a);
-    return 0;
-}*/
+
+// int main()
+// {
+//     int a;
+//     printf("Enter a three digit Number:");
+//     scanf("%d",&a);
+//     a=(a%10)*100+(a/10);
+//     printf("Rotated no: %d",a);
+//     return 0;
+// }
 
 //Program 3
  /*
@@ -53,12 +51,12 @@ int main()
 
  //Program 5
 
- int main()
- {
-    //x=3<0&&5>0;
-    // Output=0
-    int x;
-    x=3<0&&5>0;
-    printf("%d",x);
-    return 0;
- }
+//  int main()
+//  {
+//     //x=3<0&&5>0;
+//     // Output=0
+//     int x;
+//     x=3<0&&5>0;
+//     printf("%d",x);
+//     return 0;
+//  }
