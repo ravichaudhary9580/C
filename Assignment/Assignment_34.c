@@ -14,9 +14,9 @@
 //     return 0;
 // }
 
-//Method of taking input character/string 
+// Method of taking input character/string 
 
-//This method is used to input one word 
+// This method is used to input one word 
 // int main()
 // {
 //     char str[20];
@@ -48,17 +48,17 @@
 
 
 //Program 1
-int main()
-{
-    char str[]="RAVI CHAUDHARY";
-    int i;
-    for(i=0;str[i];i++);
-    printf("%d",i);
-    return 0;
-}
+// int main()
+// {
+//     char str[]="RAVI CHAUDHARY";
+//     int i;
+//     for(i=0;str[i];i++);
+//     printf("%d",i);
+//     return 0;
+// }
 
 
-//Program 2
+// Program 2
 // int main()
 // {
 //     char occ,str[]="RAVI CHAUDHARY";

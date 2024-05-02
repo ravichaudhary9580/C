@@ -65,14 +65,33 @@
 
 
 //Program 4
+// int mai()
+// {
+//     char str1[]="RAVI CHAUDHARY",HELL[15];
+//     int i,p=0;
+//     for(i=0;str1[i];i++,p++)
+//     {
+//     HELL[p]=str1[i];
+//     }
+//     printf("%s",HELL);
+//     return 0;
+// }
+
+
+//Program 5
 int main()
 {
-    char str1[]="RAVI CHAUDHARY",HELL[15];
+    char str[15],ch;
     int i;
-    for(i=0;str1[i];i++)
+    printf("Enter a string:");
+    fgets(str,15,stdin);
+    printf("Enter a character:");
+    scanf("%c",&ch);
+    for(i=0;str[i];i++)
     {
-    HELL[i]=str1[i];
+        if(ch==str[i])
+        printf("%d, ",i+1);
     }
-    printf("%s",HELL);
     return 0;
+
 }
