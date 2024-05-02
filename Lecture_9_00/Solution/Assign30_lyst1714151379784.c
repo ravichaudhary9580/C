@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 void f1()
 {
     int i,a[10],round,t;
