@@ -23,46 +23,43 @@
 
 //Program 2
 
-// int ain()
-// {
-//     char str[]="RAVI";
-//     int count,i;
-//     for(count=0;str[count];count++);
-
-//     for(i=0;str[i];i++)
-//     {
-//         str[i]=str[count];                        NEED TO RECHECK
-//         count--;
-//     }
-//     for(i=4;str[i];i--)
-//     printf("%c",str[i]);
-//     return 0;
-// }
-
-
+/* int main()
+{
+    char str[]="RAVI";
+    char rev[5]="";
+    int size=5,i;
+    for (i=0;i<size-1;i++)
+    {
+        rev[i]=str[size-2-i];
+    }
+    printf("%s",str);  
+    printf("\n%s",rev);  
+    return 0;
+}
+ */
 //Program 3 
 
 
-// int main()
-// {
-//     char str[]="RAVI CHA$$37 354 2465f gfghbs ^&UD@HARY";
-//     int i,alphabet=0,digit=0,spcharacter=0;
+/* int main()
+{
+    char str[]="RAVI CHA$$37 354 2465f gfghbs ^&UD@HARY";
+    int i,alphabet=0,digit=0,spcharacter=0;
     
-//     for(i=0;str[i];i++)
-//     {
-//         if(str[i]>64&&str[i]<91||str[i]>96&&str[i]<123)
-//         alphabet=alphabet+1;
-//         else if (str[i]>47&&str[i]<58)
-//         digit=digit+1;
-//         else 
-//         spcharacter=spcharacter+1;
-//     }
-//     printf("\nAlphabets = %d",alphabet);
-//     printf("\nDigits = %d",digit);
-//     printf("\nSpecial character = %d",spcharacter);
-//     return 0;
-// }
-
+    for(i=0;str[i];i++)
+    {
+        if(str[i]>64&&str[i]<91||str[i]>96&&str[i]<123)
+        alphabet=alphabet+1;
+        else if (str[i]>47&&str[i]<58)
+        digit=digit+1;
+        else 
+        spcharacter=spcharacter+1;
+    }
+    printf("\nAlphabets = %d",alphabet);
+    printf("\nDigits = %d",digit);
+    printf("\nSpecial character = %d",spcharacter);
+    return 0;
+}
+ */
 
 //Program 4
 // int mai()
@@ -79,9 +76,9 @@
 
 
 //Program 5
-int main()
+/* int main()
 {
-    char str[15],ch;
+    char str[15],ch,occ;
     int i;
     printf("Enter a string:");
     fgets(str,15,stdin);
@@ -90,8 +87,12 @@ int main()
     for(i=0;str[i];i++)
     {
         if(ch==str[i])
-        printf("%d, ",i+1);
+        {
+        occ=1;
+        break;
+        }
     }
+    if(occ==1)
+        printf("\n %d",i+1);
     return 0;
-
-}
+} */

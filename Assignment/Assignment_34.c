@@ -48,14 +48,14 @@
 
 
 //Program 1
-// int main()
-// {
-//     char str[]="RAVI CHAUDHARY";
-//     int i;
-//     for(i=0;str[i];i++);
-//     printf("%d",i);
-//     return 0;
-// }
+/* int main()
+{
+    char str[]="RAVI CHAUDHARY";
+    int i;
+    for(i=0;str[i];i++);
+    printf("Length of String: %d",i);
+    return 0;
+} */
 
 
 // Program 2
@@ -92,20 +92,20 @@
 
 
 // Program 4
-// int main()
-// {
-//     char space,str[]="RAVI CH AU DHARY";
-//     int i,count;
-//     space=' ';
-//     for(i=0;str[i];i++)
-//     {
-//     if(space==str[i])
-//     count=count+1;
-//     }
-//     printf("%d",count);
-//     return 0;
-// }
-
+/* int main()
+{
+    char space,str[]="RAVI CH AU DHARY";
+    int i,count;
+    space=' ';
+    for(i=0;str[i];i++)
+    {
+    if(space==str[i])
+    count=count+1;
+    }
+    printf("%d",count);
+    return 0;
+}
+ */
 
 //Program 5
 
