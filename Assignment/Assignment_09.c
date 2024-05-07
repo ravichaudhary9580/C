@@ -33,7 +33,7 @@
 
 
 //Program 3
-int main()
+/* int main()
 {
     char n;
     printf("Enter an Alphabet:");
@@ -43,7 +43,7 @@ int main()
     else if (n<123&&n>96)
     printf("Lowercase");
     return 0;
-}
+} */
 
 //Program 4
 /*int main()

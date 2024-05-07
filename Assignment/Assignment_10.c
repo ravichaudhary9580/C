@@ -17,7 +17,7 @@
 
 
 // Program 2
-int main()
+/* int main()
 {
     char n;
     printf("Enter an Alphabet:");
@@ -31,7 +31,7 @@ int main()
     else//if (n<256&&n>122&&n<97&&n>90&&n<65&&n>57&&n<48&&n>0)
     printf("Special Character");
     return 0;
-}
+} */
 
 
 
