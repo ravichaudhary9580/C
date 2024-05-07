@@ -141,7 +141,7 @@
 
 
 //Program 10
-int main()
+/* int main()
 {
     int i=1,n;
     printf("Enter the value of N:");
@@ -153,3 +153,4 @@ int main()
     }
     return 0;   
 }
+ */

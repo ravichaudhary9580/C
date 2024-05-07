@@ -128,7 +128,7 @@
 }*/
 
 //Program 10
-int main()
+/* int main()
 {
      int i=1;
     while(i<11)
@@ -137,4 +137,4 @@ int main()
             i++;
         }
         return 0;
-}
+} */
