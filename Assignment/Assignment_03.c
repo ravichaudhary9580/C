@@ -21,7 +21,7 @@
 }*/
 
 // Program 3
-/*int main()
+/* int main()
 {
     char a,b,c;
     printf("Enter the three characters:");
@@ -30,7 +30,7 @@
     printf("\nThe ASCII value of %c is %d",b,b);
     printf("\nThe ASCII value of %c is %d",c,c);
     return 0;
-}*/
+} */
 
 
 //Program 4

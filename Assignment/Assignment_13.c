@@ -66,7 +66,7 @@
 
 
 //Program 5
-int main()
+/* int main()
 {
     int i=1,n,sum;
     printf("Enter value of N:");
@@ -78,4 +78,4 @@ int main()
     }
     printf("Sum of cube of first N natural numbers: %d",sum);
     return 0;
-}
+} */
