@@ -70,9 +70,26 @@ void string_lower(char str[])
     printf("%c", str[i]);
 }
 
+void any_string_to_lower(char str[])
+{
+  int i;
+  for (i = 0; str[i]; i++)
+  {
+    if(96<str[i] && str[i]<123)
+    str[i]= str[i] - 32;
+
+    if (str[i] == 32)
+      str[i] = 0;
+
+    str[i] = str[i] + 32;
+  }
+  for (i = 0; str[i]; i++)
+    printf("%c", str[i]);
+}
+
 int main()
 {
-  // char str[15] = "Ravi chaudhary";
+  char str[15] = "Ravi chaudhary";
   char str1[]="ravi";
   char str2[]="radha";
   // printf("%d",string_len(str));
@@ -81,8 +98,9 @@ int main()
   // printf("Enter a string in Lower case:");
   // gets(str);
   // string_upper(str);
+  any_string_to_lower(str);
   // reverse(str, 15);
 
-  printf("%d",compare(str1,str2));
+  // printf("%d",compare(str1,str2));
   return 0;
 }
