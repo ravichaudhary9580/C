@@ -30,7 +30,7 @@ int checkPalindrome(char str[],int size)
     {
     if(str[i]==' ')
     {
-        str[i]=0;
+        str[i]=0;  //Check it again
     }
     }
     printf("%s",str);

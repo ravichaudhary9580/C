@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //Program 1
-/*int main()
+/* int main()
 {
     int n=2,i;
     while(n<=100)
@@ -16,8 +16,26 @@
     n++;
     }
    return 0;
-}*/
+} */
 
+/* int main()
+{
+    int n,i,count;
+    for(n=2;n<=100;n++)
+    {
+        count=0;
+        for(i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                count=count+1;
+            }
+        }
+        if(count==2)
+        printf("%d ",n);
+    }
+    return 0;
+} */
 
 //Program 2
 /*int main()
