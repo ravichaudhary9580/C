@@ -62,13 +62,13 @@
 
 //Program 3
 
-/*int main()
+/* int main()
 { 
     long int i = 2, n;
     printf("Enter a number:");
     scanf("%ld", &n);
-for(n++;;n++)
-   {
+    for(n++;;n++)
+    {
        for(i=2;i<n;i++)
         {
             if (n%i==0)
@@ -77,9 +77,33 @@ for(n++;;n++)
         if(i==n){
             printf("%d",n); 
             break;} 
-   }
+    }
     return 0;
-}*/
+} */
+
+/* int main()
+{
+    int n,i,count;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    n=++n;
+    while(n)
+    {
+        for(i=1,count=0;i<=n;i++)
+        {
+            if(n%i==0)
+            {count=count+1;}
+        }
+        if(count==2)
+        {
+            printf("%d",n);
+            break;
+        }
+        else
+        n++;
+    }
+    return 0;
+} */
 
 //Program 4
 
@@ -99,7 +123,22 @@ for(n++;;n++)
     return 0;
 }*/
 
-
+/* int main()
+{
+    int H,a,b;
+    printf("Enter two number:");
+    scanf("%d %d",&a,&b);
+    for(H=a<b?a:b;H;H--)
+    {
+        if(a%H==0&&b%H==0)
+        {
+        printf("%d",H);
+        break;
+        }
+    }
+    return 0;
+}
+ */
 
 //Program 5
 /*int main()
@@ -119,5 +158,27 @@ for(n++;;n++)
    }
    if(H==1)
    printf("Co-Prime");
+   else
+    printf("Not co-prime");
     return 0;
 }*/
+
+
+ /* int main()
+{
+    int H,a,b;
+    printf("Enter two number:");
+    scanf("%d %d",&a,&b);
+    for(H=a<b?a:b;H;H--)
+    {
+        if(a%H==0&&b%H==0)
+        {
+        break;
+        }
+    }
+    if(H==1)
+    printf("%d %d are co-prime",a,b);
+    else
+    printf("Not co-prime");
+    return 0;
+} */
