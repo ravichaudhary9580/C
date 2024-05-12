@@ -25,15 +25,7 @@ int checkPalindrome(char str[],int size)
 
  void trim(char str[])
  {
-    int i;
-    for(i=0;str[i];i++)
-    {
-    if(str[i]==' ')
-    {
-        str[i]=0;  //Check it again
-    }
-    }
-    printf("%s",str);
+    
  }
 
 
@@ -60,11 +52,12 @@ int count_words(char str[])
 }
 
 
+//Program 4
 
 
 
 
-
+//Program 5
 
 void any_string_to_lower(char str[])
 {
@@ -84,7 +77,6 @@ void any_string_to_lower(char str[])
 }
 
 
-//Program 5
 int insensitive_compare(char str1[], char str2[])
 {
     str1=any_string_to_lower(str[1]);
