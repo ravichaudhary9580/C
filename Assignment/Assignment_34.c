@@ -94,9 +94,9 @@
 // Program 4
 /* int main()
 {
-    char space,str[]="RAVI CH AU DHARY";
+    char space=' ',str[]="RAVI CH AU DHARY";
     int i,count;
-    space=' ';
+   
     for(i=0;str[i];i++)
     {
     if(space==str[i])

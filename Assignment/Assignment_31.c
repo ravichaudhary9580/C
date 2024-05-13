@@ -14,7 +14,7 @@ int greatest(int a[], int size)
             max=a[i];
         }
     }
-    return 0;
+    return max;
 }
 
 //Program 2
