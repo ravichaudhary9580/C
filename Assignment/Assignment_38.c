@@ -53,9 +53,12 @@ int count_words(char str[])
 
 
 //Program 4
+void reverse_string_wordwise(char str[])
+{
+  for(i=str[i];str[i];i--)
+}
 
-
-
+    
 
 //Program 5
 
