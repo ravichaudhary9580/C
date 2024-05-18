@@ -5,102 +5,124 @@
 
 /* int main()
 {
-    int a=0,b=1,c,n,m,sum1=0;
+    int a=-1,b=1,c,n;
     printf("Find Nth term in Fibonacci:");
     scanf("%d",&n);
-    m=n-2;
-    while(n>1)
+    while(n)
     {
         c=a+b;
-        sum1=sum1+c;
         a=b;
         b=c;
         n--;
     }
-    printf("%d ",sum1);
-    
-    int p=0,q=1,r,sum2=0;
-    while(m)
-    {
-        r=p+q;
-        sum2=sum2+r;
-        p=q;
-        q=r;
-        m--;
-    }
-    printf("%d ",sum2);
-
-    printf("\nNth term is %d",sum1-sum2);
+    printf("\nNth term is %d",c);
     return 0;
 } */
 
 //Program 2
 
-/* int main()
+/*  int main()
 {
-    int a=0,b=1,c,i=0,n;
+    int a=-1,b=1,c,n;
     printf("Enter a number:");
     scanf("%d",&n);
-    while(i<n)
+    while(n)
     {
         c=a+b;
         printf("%d ",c);
         a=b;
         b=c;
-        i++;
+        n--;
     }
     return 0;
-} */
+}  */
 
 
 //Program 3
-/* 
-int main()
-{
 
-}
- */
+/* int main()
+{
+    int a=-1,b=1,c,n;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    while(1)
+    {
+        c=a+b;
+        if(c>=n)
+            break;
+        a=b;
+        b=c;
+    }
+    if(c==n)
+        printf("Exist");
+    else 
+        printf("Not");
+    return 0;
+} */
+
 
 //Program 4
 /* int main()
 {
-    int n,m,sum=0,x,cube;
+    int n,m,digitcount=0,r;
+    int p,i,sum=0;
     printf("Enter a number:");
     scanf("%d",&n);
-    
     m=n;
-    while(n>0)
+    while(m)
     {
-        x=n%10;
-        n=n/10;
-        cube=x*x*x;
-        sum=sum+cube;
+        digitcount++;
+        m=m/10;
     }
-    if(m==sum)
-    printf("Armstrong");
+   for(m=n;m;m=m/10)
+   {
+        r=m%10;
+        for(p=1,i=1;i<=digitcount;i++)
+        {
+            p=p*r;
+        }
+        sum=sum+p;
+   }
+    if(sum==n)
+    printf("%d is Armstrong",n);
     else 
-    printf("Not");
+    printf("%d is Not Armstrong",n);
 
     return 0;
 } */
 
-
-int main()
+//Program 5
+/* int main()
 {
-    int m,sum=0,x,cube;
-    int i;
-    for(i=10;i<160;i++)
+    int n=1,m,digitcount,r;
+    int p,i,sum,c=1;
+    
+    while(n<100000000)
     {
-    m=i;
-    while(i)
-    {
-        x=i%10;
-        i=i/10;
-        cube=x*x*x;
-        sum=sum+cube;
+        m=n;
+        digitcount=0;
+        while(m)
+        {
+            digitcount++;
+            m=m/10;
+        }
+        for(m=n,sum=0;m;m=m/10)
+        {
+            r=m%10;
+            for(p=1,i=1;i<=digitcount;i++)
+            {
+                p=p*r;
+            }
+            sum=sum+p;
+        }
+        if(sum==n)
+        {
+        printf("\n%d-   %d ",c,n);
+        c++;
+        }
+        n++;
     }
-    if(m==sum)
-    printf("%d",m);
-    }
+
     return 0;
 }
+ */

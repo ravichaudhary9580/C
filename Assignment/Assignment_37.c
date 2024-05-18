@@ -37,7 +37,7 @@ int findFirstOcc(char str[], char ch)
 void findCharBtwIndex(char str[], int start, int end, char ch )
 {
     int i;
-    for(i=start;i<=end;i++)
+    for(i=start;i<end;i++)
     {
         if (ch==str[i])
         {
