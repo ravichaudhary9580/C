@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 //Method of printing charcter/string 
 
 // int main()
@@ -41,11 +41,22 @@
 {
     char str[8];
     printf("Enter your name:");                            need more learning
-    fgets(str,stdin);
+    fgets(str,8,stdin);
     printf("%s",str);
     return 0;   
 }*/
 
+void f1()
+{
+    char str[50];
+    int i;
+    printf("Enter a string:");
+    // gets(str);
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0'; 
+    for(i=0;str[i];i++);
+    printf("Length is %d",i);
+}
 
 //Program 1
 /* int main()
@@ -56,7 +67,23 @@
     printf("Length of String: %d",i);
     return 0;
 } */
-
+void f2()
+{
+    int i,count;
+    char str[50],occ;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0';  
+    printf("Enter a Character:");
+    scanf("%c",&occ);
+    
+    for(i=0;str[i];i++)
+    {
+    if(occ==str[i])
+    count=count+1;
+    }
+    printf("%d",count);   
+}
 
 // Program 2
 // int main()
@@ -75,6 +102,27 @@
 //     return 0;
 // }
 
+
+void f3()
+{
+    char str[50],v[]="aeiouAEIOU";
+    int i,j,count=0;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0';  
+    for(j=0;v[j];j++)
+    {
+         for(i=0;str[i];i++)
+         {
+            if(v[j]==str[i])
+            count=count+1;
+         }
+    }
+    printf("%d",count);
+}
+
+
+
 //Program 3
 // int main()
 // {
@@ -89,6 +137,22 @@
 //     printf("%d",count);
 //     return 0;
 // }
+
+
+void f4()
+{
+    char str[50],space=' ';
+    int count=0,i;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0'; 
+    for(i=0;str[i];i++)
+    {
+    if(space==str[i])
+    count=count+1;
+    }
+    printf("%d",count); 
+}
 
 
 // Program 4
@@ -106,6 +170,22 @@
     return 0;
 }
  */
+
+
+void f5()
+{
+    char str[50];
+    int i;
+    printf("Enter your name in Lower case:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0'; 
+    for(i=0;str[i];i++)
+    {
+        if(str[i]>='a'&&str[i]<='z')
+        str[i]=str[i]-32;
+    }
+    printf(str);
+}
 
 //Program 5
 

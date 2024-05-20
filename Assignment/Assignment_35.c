@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 //Program 1
 
 // int main()
@@ -20,6 +20,20 @@
 //     return 0;
 // }
 
+void f1()
+{
+    char str[50];
+    int i;
+    printf("Enter your name in Upper case:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0'; 
+    for(i=0;str[i];i++)
+    {
+        if(str[i]>='A'&&str[i]<='Z')
+        str[i]=str[i]+32;
+    }
+    printf(str);
+}
 
 //Program 2
 
@@ -37,6 +51,23 @@
     return 0;
 }
  */
+
+void f2()
+{
+    char str[50],ch;
+    int i,l;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0'; 
+    l=strlen(str);
+    for(i=0;i<l/2;i++)
+    {
+        ch=str[i];
+        str[i]=str[l-1-i];
+        str[l-1-i]=ch;
+    }
+    printf("\n%s",str);
+}
 //Program 3 
 
 
@@ -61,6 +92,26 @@
 }
  */
 
+void f3()
+{ 
+    char str[50];
+    int i,countalpha=0,countdigit=0,countspecial=0;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0'; 
+    for(i=0;str[i];i++)
+    {
+        if(str[i]>='a'&&str[i]<='z'||str[i]>='A'&&str[i]<='Z')
+        countalpha=countalpha+1;
+        else if(str[i]>='0'&&str[i]<='9')
+        countdigit=countdigit+1;
+        else
+        countspecial=countspecial+1;
+    }
+    printf("\nAlphabets = %d",countalpha);
+    printf("\nDigits = %d",countdigit);
+    printf("\nSpecial character = %d",countspecial);
+}
 //Program 4
 // int mai()
 // {
@@ -74,7 +125,20 @@
 //     return 0;
 // }
 
-
+void f4()
+{ 
+    char str[50],cpy[50];
+    int i;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0';  
+    for(i=0;str[i];i++)
+    {
+        cpy[i]=str[i];
+    }
+    cpy[i]='\0';
+    printf("%s",cpy);
+}
 //Program 5
 /* int main()
 {
@@ -96,3 +160,29 @@
         printf("\n %d",i+1);
     return 0;
 } */
+
+void f5()
+{
+    int i;
+    char str[50],ch;
+    printf("Enter a string:");
+    fgets(str,50,stdin);
+    str[strlen(str)-1]='\0';  
+    printf("Enter a Character:");
+    scanf("%c",&ch);
+    
+    for(i=0;str[i];i++)
+    {
+        if(ch==str[i])
+         break;
+    }
+    if(str[i]=='\0')
+    printf("Not found");
+    else
+    printf("First occurrence is %d",i+1);   
+}
+
+int main()
+{
+    f5();
+}
