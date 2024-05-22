@@ -1,11 +1,10 @@
 #include <stdio.h>
-
+#include<string.h>
 // Program 1
 int string_len(char str[])
 {
   int i;
-  for (i = 0; str[i]; i++)
-    ;
+  for (i = 0; str[i]; i++);
   return i;
 }
 
@@ -20,6 +19,20 @@ void reverse(char str[], int size)
   }
   rev[size - 1] = ' ';
   printf("%s", rev);
+}
+
+char* reve(char str[])
+{
+  int i,l;
+  char temp;
+  l=strlen(str);
+  for(i=0;i<l/2;i++)
+  {
+    temp=str[i];
+    str[i]=str[l-1-i];
+    str[l-1-i]=temp;
+  }
+  return str;
 }
 
 // Program 3
@@ -40,37 +53,30 @@ int compare(char str1[], char str2[])
 }
 
 // Program 4
-void string_upper(char str[])
+char* string_upper(char str[])
 {
   int i;
   for (i = 0; str[i]; i++)
   {
-    if (str[i] == 32)
-      str[i] = 64;
-
+    if(str[i]>='a'&&str[i]<='z')
     str[i] = str[i] - 32;
   }
-  // for(i=0;str[i];i++)
-  // printf("%c",str[i]);
-  printf("%s", str);
+  return str;
 }
 
 // Program 5
-void string_lower(char str[])
+char* string_lower(char str[])
 {
   int i;
   for (i = 0; str[i]; i++)
   {
-    if (str[i] == 32)
-      str[i] = 0;
-
+    if(str[i]>='A'&&str[i]<='Z')
     str[i] = str[i] + 32;
   }
-  for (i = 0; str[i]; i++)
-    printf("%c", str[i]);
+  return str;
 }
 
-void any_string_to_lower(char str[])
+char* any_string_to_lower(char str[])
 {
   int i;
   for (i = 0; str[i]; i++)
@@ -83,24 +89,23 @@ void any_string_to_lower(char str[])
 
     str[i] = str[i] + 32;
   }
-  for (i = 0; str[i]; i++)
-    printf("%c", str[i]);
+  return str;
 }
 
 int main()
 {
   char str[15] = "Ravi chaudhary";
   char str1[]="ravi";
-  char str2[]="radha";
+  char str2[]="ravi";
   // printf("%d",string_len(str));
 
   // char str[25];
   // printf("Enter a string in Lower case:");
   // gets(str);
   // string_upper(str);
-  any_string_to_lower(str);
+  // any_string_to_lower(str);
   // reverse(str, 15);
-
-  // printf("%d",compare(str1,str2));
+  // printf("%s",reve(str));
+  printf("%d",compare(str1,str2));
   return 0;
 }
