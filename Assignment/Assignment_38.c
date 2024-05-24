@@ -26,7 +26,7 @@ void checkPalindrome(char str[])
 
 //Program 2
 
- char* trim(char str[])
+/*  char* trim(char str[])
  {
     int i,l;
     l=strlen(str)-1;
@@ -36,8 +36,10 @@ void checkPalindrome(char str[])
     for(i=0;str[i]==' ';i++)
     str[i]='\0';
 
+    for()
+    temp[i]=
     return &str[i];
- }
+ } */
 
 
 //Program 3
@@ -64,11 +66,28 @@ int count_words(char str[])
 
 
 //Program 4
-void reverse_string_wordwise(char str[])
+/* void reverse_string_wordwise(char str[])
 {
-
+  char rev[50];
+  int i,j=0,l;
+  l=strlen(str)-1;
+  for(i=l;str[i];i--)
+  {
+    if(str[i]==' ')
+    { 
+      i++;
+      
+      while(str[i]!=' '||str[i]!='\0')
+      {
+        rev[j]=str[i];
+        j++;
+        i++;
+      }
+    }
+  }
+  printf("%s",rev);
 }
-
+ */
 
 //Program 5
 
@@ -131,5 +150,12 @@ int main()
   fgets(str,50,stdin);
   str[strlen(str)-1]='\0';
   printf("%s",trim(str));
+
+  /* char str[50];
+  
+  printf("Enter a string:");
+  fgets(str,50,stdin);
+  str[strlen(str)-1]='\0';
+  reverse_string_wordwise(str); */
   return 0;
 }
