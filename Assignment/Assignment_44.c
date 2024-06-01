@@ -8,14 +8,15 @@ struct Employee
     float salary;
 };
 
-
 //Program 2
 struct Employee input()
 {
     struct Employee e;
     printf("Enter employee id, name and salary:");
-    scanf("%d",&e.empid);
+    scanf("\n%d",&e.empid);
+    fflush(stdin);
     fgets(e.name,20,stdin);
+    e.name[strlen(e.name)-1]='\0';
     scanf("%f",&e.salary);
     return e;
 }
@@ -27,27 +28,66 @@ void display(struct Employee e)
 }
 
 //Program 4
-
-
-void higest_salary(struct Employee a[],int size)
+void highest_salary(struct Employee emp[],int size)
 {
-    int i, max;
-    max=emp[0].salary;
+    struct Employee max;
+    int i;
+    max=emp[0];
     for(i=1;i<size;i++)
     {
-        if(max<emp[i].salary)
+        if(max.salary<emp[i].salary)
         {
-            max=emp[i].salary;
+            max=emp[i];
         }
     }
-    
+    display(max);
+}
+
+//Program 5
+void sort(struct Employee emp[],int size)
+{
+    struct Employee temp;
+    int i,j;
+    for(j=0;j<size-1;j++){
+        for(i=0;i<=size-1-j;i++){
+            if(emp[i].salary<emp[i+1].salary){
+                temp=emp[i];
+                emp[i]=emp[i+1];
+                emp[i+1]=temp;
+            }
+        }
+    }
+    for(i=0;i<size;i++)
+    {
+        display(emp[i]);
+    }
+}
+
+//Program 6
+void sortbyname(struct Employee emp[],int size)
+{
+   struct Employee temp;
+    int i,j;
+    for(j=0;j<size-1;j++){
+        for(i=0;i<size-1-j;i++){
+            if((strcmp(emp[i].name,emp[i+1].name))==1){
+                temp=emp[i];
+                emp[i]=emp[i+1];
+                emp[i+1]=temp;
+            }
+        }
+    }
+    for(i=0;i<size;i++)
+    {
+        display(emp[i]);
+    }
 }
 
 int main()
 {
-//    struct Employee e1;
-//    e1=input();
-//    display(e1);
+   /* struct Employee e1;
+   e1=input();
+   display(e1); */
     struct Employee emp[5],max;
 
     emp[0].empid=101;
@@ -67,13 +107,11 @@ int main()
     emp[3].salary=50000;
 
     emp[4].empid=105;
-    strcpy(emp[4].name,"Veer");
+    strcpy(emp[4].name,"Ceer");
     emp[4].salary=40000;
-//   int i;
-//   for(i=0;i<5;i++)
-i=highest_salary(emp,5)
-  display(emp[i]);
 
+    // highest_salary(emp,5);
+    sortbyname(emp,5);
 
     return 0;
 }
