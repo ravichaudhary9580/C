@@ -20,17 +20,17 @@ class Complex
         Complex operator+(int);
         friend Complex operator+(int,Complex);
         friend ostream& operator<<(ostream&,Complex);
-        firend istream& operator>>(istream&,Complex&);
+        friend istream& operator>>(istream&,Complex&);
 };
 istream& operator>>(istream &din, Complex &X)
 {
     din>>X.a>>X.b;
     return din;
 }
-ostream& operator<<(ostream &dout,Complex X)
+ostream& operator<<(ostream &ram,Complex X)
 {
-    dout<<"a="<<X.a<<" b="<<X.b;
-    return dout;
+    ram<<"a="<<X.a<<" b="<<X.b;
+    return ram;
 }
 Complex operator+(int k,Complex X)
 {
@@ -72,7 +72,7 @@ void Complex::showData()
 int main()
 {
     Complex c1,c2,c3,c4,c5,c6;
-    cout<<"Enter a complex number (real and imag part):";
+   /*  cout<<"Enter a complex number (real and imag part):";
     cin>>c1;
     c2.setData(5,6);
     c3=c1+c2; //c3=operator+(c1,c2);
@@ -82,10 +82,11 @@ int main()
     cout<<endl;
     c5=c1+5; //c5=c1.operator+(5);
     c5.showData();
-    c6=5+c1; //c6=operator+(5,c1);
+    c6=5+c1; //c6=operator+(5,c1); */
+    c6.setData(5,6);
     cout<<c6; //operator<<(cout,c6);
 
-    c3=c1.sumGreater(c2);
+    // c3=c1.sumGreater(c2);
     cout<<endl;
     return 0;
 }
