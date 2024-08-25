@@ -1,2 +1,4 @@
-
-    printf("%d ",arr[j]);
+{
+        printf("\\n");
+        return 0;
+    }

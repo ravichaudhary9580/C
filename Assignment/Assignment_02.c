@@ -49,7 +49,7 @@
 }*/
 
 // Program 5  Method - 1
-int main()
+/* int main()
 {
     int cp,sp,profit;
     float no_of_dozen, net_profit;
@@ -65,7 +65,7 @@ int main()
     printf("\nNo. of dozens is %f",no_of_dozen);
     printf("\nProfit on 25 Bananas is %f",net_profit);
     return 0;
-}
+} */
 
 //Program 5 Method - 2
 /*int main()

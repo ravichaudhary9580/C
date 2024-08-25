@@ -60,7 +60,7 @@
 }*/
 
 // Program 4
-/*int main()
+int main()
 {
     int n;
     printf("Enter a year:");
@@ -77,7 +77,7 @@
     else
     printf("Not a Leap Year");
     return 0;
-}*/
+}
 
 
 //Program 5
@@ -133,7 +133,7 @@
 
 //In Single Line 
 
-int main()
+/* int main()
 {
     int a,b,c;
     printf("Enter 3 numbers:");
@@ -141,4 +141,4 @@ int main()
     printf("%d",a>b?   a>c?a:c  :  b>c?b:c);
     
     return 0;
-}
+} */
