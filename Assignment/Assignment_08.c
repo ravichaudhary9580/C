@@ -39,11 +39,12 @@
 }*/
 
 // Program 3
-/*int main()
+/* int main()
 {
-    int d;
-    printf("Enter value of d :");
-    scanf("%d",&d);
+    int a,b,c,d;
+    printf("Enter value of a,b,c :");
+    scanf("%d %d %d",&a,&b,&c);
+    d=(b*b)-(4*a*c);
     if (d>0)
     {
         printf("Root are Real");
@@ -57,10 +58,10 @@
         printf("Roots are Imaginary");
     }
     return 0;
-}*/
+} */
 
 // Program 4
-int main()
+/* int main()
 {
     int n;
     printf("Enter a year:");
@@ -77,7 +78,7 @@ int main()
     else
     printf("Not a Leap Year");
     return 0;
-}
+} */
 
 
 //Program 5

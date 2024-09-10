@@ -51,7 +51,7 @@
 
 
 //Program 4
-int main()
+/* int main()
 {
     int n;
     printf("Enter a number:");
@@ -62,7 +62,7 @@ int main()
     }
     else printf("Odd");
     return 0;
-}
+} */
 
 
 
@@ -80,4 +80,18 @@ int main()
     printf("Even");
     return 0;
 }*/
-
+//Method 2
+/* int main()
+{
+    //if n is odd and XOR with 1 then n is incremented by 1 otherwise if n is even then it is decremented  
+    int n;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    if((n^1) == (n+1))
+    {
+       printf("Even");
+    }
+    else
+    printf("Odd");
+    return 0;
+} */

@@ -63,16 +63,28 @@
     return 0;
 }*/
 
-
+//Using Bitwise Operator
 //Program 7
 /*int main()
 {
-    //Using Biitwise Operator
-    int 
+    int a=5,b=4;
+    printf("Value in a is %d \n Value in b is %d ",a,b); 
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("\nValue in a is %d \n Value in b is %d ",a,b);
+    return 0;
 }*/
 
 //Program 8 
-int main()
+/* int main()
 {
     //Single line Airthmetic operator
-}
+    int a,b;
+    printf("Enter two numbers:");
+    scanf("%d %d",&a,&b);
+    printf("Value in a and b is: %d %d ",a,b);
+    a=a+b-(b=a);
+    printf("\nValue in a and b is: %d %d ",a,b)
+    return 0;
+} */
