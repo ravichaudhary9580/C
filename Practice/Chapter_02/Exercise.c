@@ -72,11 +72,33 @@
 
 //Program 5
 // If value of an angle is input through the keyboard, write a program to print all its Trigonometric ratios.
-int main()
+/* int main()
 {
     int angle;
-    printf("Enter the angle:");
+    printf("Enter the angle in degree:");
     scanf("%d",&angle);
-    printf("Sin(%d) is %f",angle,sin(angle));
+    
+    printf("\nSin(%d) is %f",angle,sin((M_PI*angle)/180.0));
+    printf("\nCos(%d) is %f",angle,cos((M_PI*angle)/180.0));
+    printf("\nTan(%d) is %f",angle,tan((M_PI*angle)/180.0));
+    printf("\nCosec(%d) is %f",angle,asin((M_PI*angle)/180.0));
+    printf("\nSec(%d) is %f",angle,acos((M_PI*angle)/180.0));
+    printf("\nCot(%d) is %f",angle,atan((M_PI*angle)/180.0));
+
     return 0;
-}
+} */
+
+//Program 6
+//Two numbers are input through the keyboard into two loacations C and D. Write a program to interchange the content of C and D.
+/* int main()
+{
+    int C, D,temp;
+    printf("Enter two numbers:");
+    scanf("%d %d",&C,&D);
+    printf("Before interchanging content: %d %d",C,D);
+    temp=C;
+    C=D;
+    D=temp;
+    printf("\nAfter interchanging content: %d %d",C,D);
+    return 0;
+} */
