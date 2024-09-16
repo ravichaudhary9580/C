@@ -134,3 +134,73 @@
 
 //Program 8
 //Given a point (x,y), write a program to find out if it lies on X-axis, Y-axis or origin.
+/* int main()
+{
+    int x,y;
+    printf("Enter the co-ordinate of point(x,y): ");
+    scanf("%d %d",&x,&y);
+    if(x==0&&y==0)
+        printf("Point is on Origin");
+    else if((x>0||x<0)&&y==0)
+        printf("Point is on X-axis");
+    else if((y>0||y<0)&&x==0)
+        printf("Point is on Y-axis");
+    else if(x>0&&y>0)
+        printf("Point is in I-quadrant");
+    else if(x<0&&y>0)
+        printf("Point is in II-quadrant");
+    else if(x<0&&y<0)
+        printf("Point is in III-quadrant");
+    else if(x>0&&y<0)
+        printf("Point is in IV-quadrant");
+    return 0;
+} */
+
+//Program 9
+//According to Gregorian calendar, it was Monday on the date 01/01/01. If any year is input through the keyboard write a program to find out what is the day on 1ˢᵗ January of this year.
+int main()
+{
+    int year,nth_leap,rem;
+    printf("Enter the Year:");
+    scanf("%d",&year);
+    if((year%4!=0)||(year%100==0&&year%400!=0)){
+        nth_leap= year/4;
+        rem=year%4;
+    } 
+        
+    else{
+        nth_leap= (year/4) ;
+        printf("%d\n",nth_leap);
+        nth_leap= (year/100) - (year/400);
+        printf("%d\n",nth_leap);
+        nth_leap= (year/4) - ((year/100) - (year/400));
+        printf("%d\n",nth_leap);
+
+        rem=( nth_leap*5)%7;
+        switch (rem)
+        {
+            case 0:
+                printf("Sunday");
+                break;
+            case 1:
+                printf("Monday");
+                break;
+            case 2:
+                printf("Tuesday");
+                break;
+            case 3:
+                printf("Wednesday");
+                break;
+            case 4:
+                printf("Thrusday");
+                break;
+            case 5:
+                printf("Friday");
+                break;
+            case 6:
+                printf("Saturday");
+                break;
+        }
+    }
+    return 0;
+}
