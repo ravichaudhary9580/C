@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 //Program 1
 /*int main()
 {
@@ -31,8 +30,8 @@
     return 0;
 }*/
 
-//Program 3
 
+//Program 3
 /*int main()
 {
     int i=1,n,sum;
@@ -62,7 +61,6 @@
     printf("Sum of squares of first N natural numbers: %d",sum);
     return 0;
 }*/
-
 
 
 //Program 5

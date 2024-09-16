@@ -18,6 +18,7 @@
    return 0;
 } */
 
+//Using for loop only
 /* int main()
 {
     int n,i,count;

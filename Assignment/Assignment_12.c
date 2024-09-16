@@ -97,7 +97,7 @@
 
 /*int main()
 {
-       int i=0,n;
+    int i=0,n;
     printf("Enter the value of N:");
     scanf("%d",&n); 
     while(i<n)

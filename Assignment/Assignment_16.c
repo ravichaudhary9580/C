@@ -87,7 +87,6 @@
     printf("%d is Armstrong",n);
     else 
     printf("%d is Not Armstrong",n);
-
     return 0;
 } */
 
@@ -122,7 +121,5 @@
         }
         n++;
     }
-
     return 0;
-}
- */
+}*/

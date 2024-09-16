@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 // Program 1
-
 /*int main()
 {
     int i=1,fact=1,n;
@@ -16,8 +15,8 @@
     return 0;
 }*/
 
-// Program 2
 
+// Program 2
 /*int main()
 {
     int n,count=0;
@@ -32,8 +31,8 @@
     return 0;
 }*/
 
-// Program 3
 
+// Program 3
 /*int main()
 {
     long int i = 2, n;
@@ -51,7 +50,7 @@
         if(i==n)
         {
             printf("Prime");
-         }
+        }
     return 0;
 }*/
 
@@ -76,8 +75,8 @@
 
 } */
 
-//Program 4
 
+//Program 4
 /*int main()
 {
     int a,b,L;
