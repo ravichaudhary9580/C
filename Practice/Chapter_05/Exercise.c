@@ -107,7 +107,75 @@
 
 //Program 4
 //Write a program to enter numbers until user wants. At the end it should display the count of positive, negative and zeros entered.
-int main()
+/* int main()
 {
-    
-}
+    char choice;
+    int n,countPositive=0,countNegative=0,countZero=0;
+    printf("\nDo you want to count number?(y/n): ");
+    scanf(" %c",&choice);
+    while(choice=='y' || choice=='Y')
+    {
+        printf("Enter number:");
+        scanf("%d",&n);
+        if(n>0)
+            ++countPositive;
+        else if(n==0)
+            ++countZero;
+        else
+            ++countNegative;
+        printf("\nDo you want to enter more number?(y/n): ");
+        scanf(" %c",&choice);
+    }   
+    printf("\nNumber of Positve numbers: %d\n",countPositive);
+    printf("Number of Negative numbers: %d\n",countNegative);
+    printf("Number of Zeros: %d\n",countZero);
+    return 0;
+} */
+
+
+//Program 5
+//Write a program to receive an integer and find its octal equivalent. (Hint: To obtain octal equivalent of an integer, divide it continuously by 8 till dividend doesn't become zero, then write the remainders obtained in reverse direction.)
+/* int main()
+{
+    int n,oct=0;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    while(n)
+    {
+        oct=10*oct+n%8;
+        n=n/8;
+    }
+    //Reverse the oct
+    while(oct)
+    {
+        n=10*n+oct%10;
+        oct=oct/10;
+    }
+    printf("\nOctal Equivalent is: %d",n);
+    return 0;
+} */
+
+//Progarm 6
+//Write a program to find the range of a set of numbers entered through the keyboard. Range is the difference  between the smallest and biggest number in the list.
+/* int main()
+{
+    int n,max,min;
+    char choice='y';
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    max=n;
+    min=n;
+    do
+    {
+        printf("Enter a number: ");
+        scanf("%d",&n);
+        if(n>max)
+            max=n;
+        if(n<min)
+            min=n;
+        printf("\033[34mDo you want to enter more number(y/n):\033[0m ");
+        scanf(" %c",&choice);
+    } while (choice=='y' || choice=='Y');
+    printf("\033[32mRange of the list is:\033[0m %d",max-min);
+    return 0;
+} */
