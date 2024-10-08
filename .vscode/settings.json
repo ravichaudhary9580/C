@@ -4,5 +4,6 @@
         "*.ejs": "bat",
         "sstream": "c",
         "typeinfo": "c"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
