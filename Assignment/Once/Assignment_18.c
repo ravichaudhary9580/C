@@ -232,6 +232,6 @@ int f10()
 
 int main()
 {
-    f10();
+    f2();
     return 0;
 }
