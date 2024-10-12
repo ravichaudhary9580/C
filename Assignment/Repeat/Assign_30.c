@@ -1,9 +1,9 @@
 #include<stdio.h>
 //Program 1
-void f1()
+/*int main()
 {   
     int num[10];
-    printf("Enter the 10 values to sort:");
+    printf("Enter the 10 values to sort in ascending order:\n");
     for(int i=0;i<=9;i++){
         scanf("%d",&num[i]);
     }
@@ -22,10 +22,11 @@ void f1()
     for(int i=0;i<=9;i++){
         printf(" %d ",num[i]);
     }
-}
+    return 0;
+}*/
 
 // Program 2
-void f2()
+/*int manin()
 {
     int arraySize;
     printf("Enter array Size:");
@@ -51,11 +52,12 @@ void f2()
         }
     }
     res=num[arraySize-nthLargest];
-    printf("\n%d st/nd/rd/th/ Largest: %d",nthLargest,res);
-}
+    printf("\n%d st/nd/rd/th Largest: %d",nthLargest,res);
+    return 0;
+}*/
 
 // Program 3
-void f3()
+/* int main()
 {
     int arraySize;
     printf("Enter array Size:");
@@ -70,13 +72,13 @@ void f3()
     
     for(int n=1;n<=nthSmallest;n++)
     {
-        for(int i=0;i<=arraySize-1;i++)
+        for(int i=0;i<arraySize-1;i++)
         {   int temp;
             if(num[i]<num[i+1])
             {
-                temp=num[i];
-                num[i]=num[i+1];
-                num[i+1]=temp
+                temp=num[i+1];
+                num[i+1]=num[i];
+                num[i]=temp;
             }
         }
     }
@@ -84,14 +86,15 @@ void f3()
         printf(" %d ",num[i]);
     }
     res=num[arraySize-nthSmallest];
-    printf("\n%d st/nd/rd/th/ Smallest: %d",nthSmallest,res);
-}
+    printf("\n%d st/nd/rd/th Smallest: %d",nthSmallest,res);
+    return 0;
+} */
 
 //Program 4
-void f4()
+/* int main()
 {
     int num[10];
-    printf("Enter the 10 values to sort decending order:");
+    printf("Enter the 10 values to sort decending order:\n");
     for(int i=0;i<=9;i++){
         scanf("%d",&num[i]);
     }
@@ -110,9 +113,28 @@ void f4()
     for(int i=0;i<=9;i++){
         printf(" %d ",num[i]);
     }
-}
+    return 0;
+} */
+
+//Program 5
 int main()
 {
-    f3();
+    int arraySize;
+    printf("Enter the size of array:");
+    scanf("%d",&arraySize);
+    int num1[arraySize],num2[arraySize];
+    printf("Enter the values of array:\n");
+    for(int i=0;i<arraySize;i++)
+    {
+        scanf("%d",&num1[i]);
+    }
+    for(int i=0;i<arraySize;i++)
+    {
+        num2[i]=num1[i];    
+    }
+    for(int i=0;i<arraySize;i++)
+    {
+        printf(" %d ",num2[i]);
+    }
     return 0;
 }
