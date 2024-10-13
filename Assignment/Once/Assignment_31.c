@@ -52,7 +52,7 @@ void sort(int a[], int size)
     }
     for(i=0;i<size;i++)
     {
-    printf("%d ",a[i]);
+        printf("%d ",a[i]);
     }
 }
 
@@ -67,13 +67,13 @@ void rotate(int a[], int dir, int posi,int size)
         while(posi)
         {
             temp=a[0];
-        for(i=0;i<size;i++)
-        {
-            a[i]=a[i+1];
-            if(i==(size-1))
-            a[i]=temp;
-        }
-        posi--;
+            for(i=0;i<size;i++)
+            {
+                a[i]=a[i+1];
+                if(i==(size-1))
+                    a[i]=temp;
+            }
+            posi--;
         }
     }
     if(dir==1)
@@ -81,14 +81,13 @@ void rotate(int a[], int dir, int posi,int size)
          while(posi)
         {
             temp=a[size-1];
-        for(i=size-1;i>0;i--)
-        {
-            a[i]=a[i-1];
-           
-        }
+            for(i=size-1;i>0;i--)
+            {
+                a[i]=a[i-1];          
+            }
             a[i]=temp;
-        posi--;
-        }
+            posi--;
+            }
     }
 
     for(i=0;i<size;i++)
@@ -103,8 +102,7 @@ void rotate(int a[], int dir, int posi,int size)
 
 int findFirstAdjacentDuplicate(int a[],int size)
 {
-    int i;
-    for(i=0;i<size;i++)
+    for(int i=0;i<size;i++)
     if(a[i]==a[i+1])
     return a[i];
     else
