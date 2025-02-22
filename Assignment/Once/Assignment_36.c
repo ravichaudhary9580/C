@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 // Program 1
 int string_len(char str[])
 {
-  int i;
-  for (i = 0; str[i]; i++);
+  for (int i = 0; str[i]; i++)
+    ;
   return i;
 }
 
@@ -21,16 +21,16 @@ void reverse(char str[], int size)
   printf("%s", rev);
 }
 
-char* reve(char str[])
+char *reve(char str[])
 {
-  int i,l;
+  int i, l;
   char temp;
-  l=strlen(str);
-  for(i=0;i<l/2;i++)
+  l = strlen(str);
+  for (i = 0; i < l / 2; i++)
   {
-    temp=str[i];
-    str[i]=str[l-1-i];
-    str[l-1-i]=temp;
+    temp = str[i];
+    str[i] = str[l - 1 - i];
+    str[l - 1 - i] = temp;
   }
   return str;
 }
@@ -53,36 +53,36 @@ int compare(char str1[], char str2[])
 }
 
 // Program 4
-char* string_upper(char str[])
+char *string_upper(char str[])
 {
   int i;
   for (i = 0; str[i]; i++)
   {
-    if(str[i]>='a'&&str[i]<='z')
-    str[i] = str[i] - 32;
+    if (str[i] >= 'a' && str[i] <= 'z')
+      str[i] = str[i] - 32;
   }
   return str;
 }
 
 // Program 5
-char* string_lower(char str[])
+char *string_lower(char str[])
 {
   int i;
   for (i = 0; str[i]; i++)
   {
-    if(str[i]>='A'&&str[i]<='Z')
-    str[i] = str[i] + 32;
+    if (str[i] >= 'A' && str[i] <= 'Z')
+      str[i] = str[i] + 32;
   }
   return str;
 }
 
-char* any_string_to_lower(char str[])
+char *any_string_to_lower(char str[])
 {
   int i;
   for (i = 0; str[i]; i++)
   {
-    if(96<str[i] && str[i]<123)
-    str[i]= str[i] - 32;
+    if (96 < str[i] && str[i] < 123)
+      str[i] = str[i] - 32;
 
     if (str[i] == 32)
       str[i] = 0;
@@ -95,8 +95,8 @@ char* any_string_to_lower(char str[])
 int main()
 {
   char str[15] = "Ravi chaudhary";
-  char str1[]="ravi";
-  char str2[]="ravi";
+  char str1[] = "ravi";
+  char str2[] = "ravi";
   // printf("%d",string_len(str));
 
   // char str[25];
@@ -106,6 +106,6 @@ int main()
   // any_string_to_lower(str);
   // reverse(str, 15);
   // printf("%s",reve(str));
-  printf("%d",compare(str1,str2));
+  printf("%d", compare(str1, str2));
   return 0;
 }
